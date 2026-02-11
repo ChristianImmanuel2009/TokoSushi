@@ -1,4 +1,5 @@
 import 'package:aplikasimu/models/user_login.dart'; // Import diaktifkan
+import 'package:aplikasimu/widgets/bottomNavBar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -212,6 +213,7 @@ class _DashboardViewState extends State<DashboardView> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNav(0),
       // Tombol Logout tetap menggunakan navigasi Anda
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushReplacementNamed(context, '/login'),
